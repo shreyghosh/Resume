@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Shrey Ghosh
+% Based off of: Jake's Resume Template (github.com/jakeryang/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Shrey Ghosh} \\ \vspace{1pt}
+    \small 587-917-7581 $|$ \href{mailto:shreysaikatghosh@outlook.com}{\underline{shreysaikatghosh@outlook.com}} $|$ 
+    \href{https://www.linkedin.com/in/shrey-ghosh/}{\underline{https://www.linkedin.com/shrey}} $|$
+    \href{https://github.com/shreyghosh}{\underline{https://github.com/shreyghosh}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Webber Academy}{Exp. Jun 2023}
+      {Grade 12 Student}{Calgary, AB}
+        
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Associate}{Sep. 2022 -- Present}
+      {University of Calgary $|$ \emph{R, Excel}}{Calgary, AB}
+      \resumeItemListStart
+        \resumeItem{Conducting research project on the computational analysis of Squamous Cell Carcinoma at the Bose Lab}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Full Stack Developer}{May 2022 -- Present}
+      {Innovenium Technologies Inc. $|$ \emph{React Native, React Web, HTML/CSS}}{Calgary, AB}
+      \resumeItemListStart
+        \resumeItem{Programming of features and maintainance of the Innovenium App using React-native}
+        \resumeItem{Implementing web components of the Innovenium platform using React-native web, HTML, CSS and Javascript}
+        \resumeItem{Make key decisions regarding product roadmap, features in the Minimum Viable product and company direction}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Research Associate}{July 2021 -- Aug. 2022}
+      {University of Calgary $|$ \emph{R, SLURM, Excel}}{Calgary, AB}
+      \resumeItemListStart
+        \resumeItem{Used R to build a machine learning pipeline using several LASSO regression models}
+        \resumeItem{Identified significantly interacting genes and pathways of numerous cancers in the TCGA Database}
+        \resumeItem{Successfully classified expression data as tumerous and non-tumerous using the SCOPE pipeline developed, proving SCOPE as an accurate and stable way of analysing expression data}
+        \resumeItem{Wrote a 20-page paper and gave multiple presentations to faculty and students from the University of Calgary}
+        \resumeItem{Presented virtually to the Calgary Youth Science Fair}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{SCOPE Pipeline Melanoma Implementation} $|$ \emph{R, SLURM}}{May 2022 -- Aug. 2022}
+          \resumeItemListStart
+            \resumeItem{Modified the SCOPE pipeline upon the request of Dr. Weijia Cai from the Southern Illinois University School of Medicine for analysis of melanoma RNASeq data}
+            \resumeItem{Analysis of melanoma RNASeq data using the SCOPE pipeline suggested the further study of a few interesting genes with respect to melanoma progression}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{BlackJack} $|$ \emph{C++}}{Jun 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a local multiplayer BlackJack game with an automated house using object oriented programming}
+        \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Correlation Analysis of Demographics and Vaccination Rates} $|$ \emph{R}}{Feb. 2022 -- Apr. 2022}
+          \resumeItemListStart
+            \resumeItem{Selected by Youreka Canada to conduct a research project over a 10-week period}
+            \resumeItem{Analyzed public vaccination data from the NIH to determine correlations between demographic characteristics and vaccination rates across the United States}
+            \resumeItem{Determined that age and ethnicity of a group is statistically significant to their vaccination rates}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------Achievements-----------
+
+\section{Achievements}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Hypatia Mathematics Contest Distinction Award}{Jun. 2022}
+            {The CENTRE for EDUCATION in MATHEMATICS and COMPUTING (CEMC) - University of Waterloo}{}
+        \resumeSubheading
+            {Bronze Medal for SCOPE pipeline at Calgary Youth Science Fair}{Apr. 2022}
+            {Calgary Youth Science Fair}{}
+        \resumeSubheading
+            {Cayley Math Contest Distinction Award and School Champion}{Feb. 2021}
+            {The CENTRE for EDUCATION in MATHEMATICS and COMPUTING (CEMC) - University of Waterloo}{}     
+    \resumeSubHeadingListEnd     
+            
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C++, JavaScript, HTML/CSS, LaTeX, R} \\
+     \textbf{Frameworks}{: Git, React Native, React Native-web} \\
+     \textbf{Developer Tools}{: VS Code, Android Studio, Eclipse, QT Creator, RStudio} \\
+     \textbf{Packages}{: Glmnet, WebGestaltR, TCGAbiolinks}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
